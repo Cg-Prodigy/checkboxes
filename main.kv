@@ -1,0 +1,26 @@
+BoxBuild:
+
+<BoxLayout>:
+    orientation:'vertical'
+    Label:
+        text:'Selections'
+        font_size:dp(20)
+    GridLayout:
+        cols:2
+        Label:
+            text:'Python'
+        CheckBox:
+            group:'Lang'
+            on_active:root.process_checkbox(self,self.state,'Python')
+        Label:
+            text:'JavaSript'
+        CheckBox:
+            group:'Lang'
+            on_active:root.process_checkbox(self,self.state,'JavaScript')
+        Label:
+            text:'GoLang'
+        CheckBox:
+            group:'Lang'
+            on_active:root.process_checkbox(self,self.state,'GoLang')
+    Label:
+        text:'Your selected language is: {}'.format(root.p_values)
