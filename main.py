@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import StringProperty
 
-
+#  checkboxs
 class BoxBuild(BoxLayout):
     select_values = []
     p_values = StringProperty()
